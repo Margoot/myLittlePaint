@@ -1,6 +1,6 @@
 # myLittlePaint
 
-Here is my first project in C++, a little paint with the IDE QtCreator 
+Here is my first project in C++, a little paint with the QtCreator IDE 
 
 Realised in 2014 
 
