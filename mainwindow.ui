@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>684</width>
+    <height>592</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QGraphicsView" name="graphicsView">
+      <property name="mouseTracking">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>684</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <addaction name="new_3"/>
+    <addaction name="save_2"/>
+    <addaction name="open_2"/>
+    <addaction name="print_2"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Aide</string>
+    </property>
+    <addaction name="help"/>
+   </widget>
+   <widget class="QMenu" name="menuAffichage">
+    <property name="title">
+     <string>Affichage</string>
+    </property>
+    <addaction name="Fenetre_outil"/>
+   </widget>
+   <addaction name="menuFichier"/>
+   <addaction name="menuHelp"/>
+   <addaction name="menuAffichage"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>40</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="new_3"/>
+   <addaction name="save_2"/>
+   <addaction name="open_2"/>
+   <addaction name="print_2"/>
+   <addaction name="separator"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QDockWidget" name="dockWidget_2">
+   <property name="minimumSize">
+    <size>
+     <width>150</width>
+     <height>38</height>
+    </size>
+   </property>
+   <property name="floating">
+    <bool>false</bool>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_2">
+    <widget class="QWidget" name="gridLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>10</y>
+       <width>151</width>
+       <height>361</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="1" column="0">
+       <widget class="QPushButton" name="circle">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Rond&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/icons/rond.png</normaloff>:/icons/rond.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="line">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Trait&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/icons/line - copie.png</normaloff>:/icons/line - copie.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>50</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="pen">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Brosse&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/icons/pencil.png</normaloff>:/icons/pencil.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="rectangle">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Rectangle&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/icons/rectangle.png</normaloff>:/icons/rectangle.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="2">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QPushButton" name="erase">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Gomme&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/icons/erase.png</normaloff>:/icons/erase.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>40</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSlider" name="widthErase">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Taille de la gomme&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="color">
+          <property name="font">
+           <font>
+            <family>Baskerville</family>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Palette&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/icons/peinture.png</normaloff>:/icons/peinture.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>40</width>
+            <height>40</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="resources.qrc">:/icons/lineWidth.png</pixmap>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="width">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Epaisser du trait&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <action name="save_2">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/document_save.png</normaloff>:/icons/document_save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Enregistrer</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Calibri</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="open_2">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/open.png</normaloff>:/icons/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ouvrir</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Calibri</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="print_2">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/imprimante.png</normaloff>:/icons/imprimante.png</iconset>
+   </property>
+   <property name="text">
+    <string>Imprimer</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Calibri</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="help">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/interr.png</normaloff>:/icons/interr.png</iconset>
+   </property>
+   <property name="text">
+    <string>Mylittlepaint aide</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Calibri</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="new_3">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/newfile.png</normaloff>:/icons/newfile.png</iconset>
+   </property>
+   <property name="text">
+    <string>Nouveau</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Calibri</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+  </action>
+  <action name="Fenetre_outil">
+   <property name="text">
+    <string>Ajouter fenetre outil</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Calibri</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <zorder>dockWidget_2</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>Fenetre_outil</sender>
+   <signal>triggered()</signal>
+   <receiver>dockWidget_2</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>74</x>
+     <y>318</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

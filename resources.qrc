@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>newfile.png</file>
+        <file>pencil.png</file>
+        <file>rectangle.png</file>
+        <file>rond.png</file>
+        <file>peinture.png</file>
+        <file>imprimante.png</file>
+        <file>open.png</file>
+        <file>line - copie.png</file>
+        <file>document_save.png</file>
+        <file>erase.png</file>
+        <file>interr.png</file>
+        <file>lineWidth.png</file>
+    </qresource>
+</RCC>
